@@ -27,7 +27,6 @@ workflows:
               script: |
                 gradle wrapper --gradle-version 7.6
                 chmod +x android/./gradlew
-                --warning-mode all                
                 cd android
                 ./gradlew assembleDebug
         artifacts:
