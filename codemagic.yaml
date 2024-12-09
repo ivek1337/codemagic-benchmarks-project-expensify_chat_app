@@ -25,7 +25,7 @@ workflows:
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"            
             - name: Build Android release
               script: |
-                gradle wrapper --gradle-version 7.6
+                # gradle wrapper --gradle-version 7.6
                 chmod +x android/./gradlew
                 cd android
                 ./gradlew assembleDebug
