@@ -28,7 +28,8 @@ workflows:
                 gradle wrapper --gradle-version 7.6
                 chmod +x android/./gradlew
                 cd android
-                ./gradlew assembleDebug 
+                ./gradlew assembleDebug
+                --warning-mode all
         artifacts:
             - android/app/build/outputs/**/*.aab
             - android/app/build/outputs/**/*.apk
